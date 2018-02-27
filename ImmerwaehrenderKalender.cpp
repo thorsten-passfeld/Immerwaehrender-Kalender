@@ -25,32 +25,6 @@ enum Wochentage {
 };
 
 /*
- *  Funktion: validInputInt
- * 
- *  Prueft eine Eingabe vom Nutzer darauf, ob sie tatsächlich
- *  vom Typ int ist und verlangt sonst eine weitere Eingabe.
- *  Der gepruefte Wert wird dann ausgegeben.
- * 
- *  return: int -- Die gepruefte, bereinigte Eingabe
- * 
- */
-/*
-int validInputInt() {
-    int eingabe;
-
-    cin >> eingabe;
-    while (cin.fail()) //Solange die Eingabe nicht eindeutig von Typ int ist (Sonderzeichen, etc.)
-    {
-        cin.clear(); //Fehlerstatus wird auf goodbit gesetzt, um weiterhin mit der Eingabe zu arbeiten
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); //Eingabe wird bis zum newline character gelöscht
-        cout << "Fehlerhafte Eingabe. Bitte eine gueltige Zahl eingeben: ";
-        cin >> eingabe;
-    }
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    return eingabe;
-} */
-
-/*
  *  Funktion: correctInput
  * 
  *  Prueft eine Eingabe vom Nutzer darauf, ob sie tatsächlich
