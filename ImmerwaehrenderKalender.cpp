@@ -318,23 +318,13 @@ enum Wochentage wochentag(int& tag, int& monat, int& jahr) {
 
 int main() {
 
-    cout << "Dieses Programm gibt ihnen den Wochentag des von ihnen eingegebenen Datums aus." << endl;
+    cout << "Dieses Programm gibt ihnen den Wochentag des von ihnen eingegebenen Datums ein." << endl;
 
     int tag, monat, jahr = 0;
 
     do {
-        cout << "Bitte geben sie ein Datum im Datumsformat aus. z.B. 24.12.2017" << endl;
+        cout << "Bitte geben sie ein Datum im Datumsformat ein. z.B. 24.12.2017" << endl;
         correctInput(tag,monat,jahr);
-        /*
-        cout << "Bitte geben sie einen gueltigen Tag ein: ";
-        tag = validInputInt();
-        cout << endl;
-        cout << "Bitte geben sie einen gueltigen Monat ein: ";
-        monat = validInputInt();
-        cout << endl;
-        cout << "Bitte geben sie ein gueltiges Jahr ein: ";
-        jahr = validInputInt();
-        cout << endl << endl; */
         if (!istGueltig(tag, monat, jahr)) cout << "Fehler!" << endl;
     } while (!istGueltig(tag, monat, jahr));
 
